@@ -5,7 +5,7 @@ function App() {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    fetch('/api/coffees')
+    fetch('https://dpdc646.dpdatacenter.com/api/coffees')
       .then(res => res.json())
       .then(data => {
         setCoffees(data)
